@@ -1,0 +1,27 @@
+%YAML:1.0
+---
+exposure_time_absolute: 1000  #曝光时间可以设置为自动或手动,曝光时间以微秒为单位
+
+brightness: 128 #亮度只能设置为手动,有效范围为0-255,默认值是128
+
+contrast: 0 #对比度只能设置为手动
+
+saturation: 0  #饱和度只能设置为手动
+
+sharpness: 0 #锐度只能设置为手动
+
+white_balance: 20 #白平衡可以设置为自动或手动,单位是开尔文度,该设置必须设置为可被10整除的数
+
+backlight_compensation: 1 #背光补偿只能设置为手动,0表示禁用背光补偿,1表示启用背光补偿
+
+gain: 0 #曝光增益只能设置为手动
+
+powerline_frequency: 1 #电力线频率只能设置为手动,值为1将其设置为50Hz,值为2将其设置为60Hz
+
+fps: K4A_FRAMES_PER_SECOND_30 #帧率设置,可设置为5, 15, 30
+
+color_resolution: K4A_COLOR_RESOLUTION_1080P #彩色图分辨率设置,可以设置分辨率为720P,1080P,1440P,1536P,2160P,3072P
+
+depth_mode: K4A_DEPTH_MODE_NFOV_UNBINNED #深度模式可设置Off,NFOV_2x2Binned,NFOV_Unbinned,WFOV_2x2BInned,WFOV_Unbinned,PassivelR
+
+color_format: K4A_IMAGE_FORMAT_COLOR_BGRA32 #颜色属性可设置为COlorMJPg,ColorNV12,ColorYUY2,COlorBGRA32,Depth12,IR16,CUstom8,CUstom16,CUstom

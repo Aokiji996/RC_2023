@@ -1,0 +1,44 @@
+brightness: 6 #亮度设置,可设置的值介于0-8之间
+
+contrast: 2 #对比度设置,可设置的值应介于0-11之间
+
+hue: 0 #色调设置,可设置的值应介于0-11之间
+
+saturation: 4 #饱和度设置,可设置的值应介于0-8之间
+
+sharpness: 5 #锐度设置,可设置的值应介于0-8之间
+
+gamma: 8 #伽马矫正,可设置的值应介于1-9
+
+white_balance: 4200 #白平衡设置,可设置的值应介于2800-6500之间
+
+gain: 9 #曝光增益设置,可设置的值应介于0-100之间
+
+exposure: 29 #曝光时间设置,对于手动控制,可设置的值应介于0-100
+
+camera_resolution: HD1080 #相机分辨率设置,可设置的值为HD2K,HD1080,HD720,VGA,AUTO
+
+camera_fps: 30 #相机帧率设置如下
+#HD2K:15 fps
+#HD1080:15,30 fps
+#HD720:15,30,60 fps
+#VGA:15,30,60,100 fps
+#AUTO:自动选择分辨率,无需设置帧率
+
+depth_mode: ULTRA #相机深度模式设置如下
+#NONE:此模式不计算任何深度图,只有校正后的立体图像可用
+#PERFORMANCE(默认):针对速度优化的计算模式
+#QUALITY:专为具有无纹理表面的挑战性区域设计的计算模式
+#ULTRA:有利于边缘和锐度的计算模式,需要更多的GPU内存和计算能力
+#NEURAL:端到端神经差异估计，需要AI模块
+
+minimum_depth: 0.5 #最小深度值,自定义设置,在计算能力有限的情况下,增加这个值可以提供更好的性能
+
+maximum_depth: 6 #最大深度值,自定义设置计算中的当前最大值,大于该值会转换成TOO_FAR
+
+coordinate_system: RIGHT_HANDED_Y_UP #坐标系设置如下
+#LEFT_HANDED_Y_UP:Left-Handed with Y up and Z forward. Used in Unity with DirectX
+#RIGHT_HANDED_Y_UP:Right-Handed with Y pointing up and Z backward. Used in OpenGL
+#RIGHT_HANDED_Z_UP:Right-Handed with Z pointing up and Y forward. Used in 3DSMax.
+#LEFT_HANDED_Z_UP:Left-Handed with Z axis pointing up and X forward. Used in Unreal Engine.
+#RIGHT_HANDED_Z_UP_X_FWD:Right-Handed with Z pointing up and X forward. Used in ROS (REP 103).
